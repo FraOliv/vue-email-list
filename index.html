@@ -45,11 +45,20 @@
   <!-- main -->
   <main>
    <div id="app">
-    <h1>LISTA EMAIL TRAMITE API</h1>
-    <ol>
+   <div class="container-list">
+      <h1>LISTA EMAIL TRAMITE API</h1>
+    <ol class="lista">
       <li v-for="email in ListaMail"> {{ email }} </li>
     </ol>
-  </div>
+   </div>
+      <button @click="random">click</button>
+            <div class="container">
+                <div v-bind:class="num <= 5 ? 'bg-yellow' : 'bg-green' " class="box" v-for="num in GridNumbers">
+                    <h1>{{num}}</h1>
+                </div>
+
+            </div>
+        </div>
   <!-- /main -->
 
 

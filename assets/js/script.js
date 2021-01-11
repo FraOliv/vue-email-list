@@ -5,12 +5,11 @@ const app = new Vue({
     GridNumbers: [],
   },
    methods: {
-        random(){
+        gridGenerator(){
             this.GridNumbers = [];
             for (let i = 0; i < 36; i++) {
                 axios.get('https://flynn.boolean.careers/exercises/api/random/int').then(response => {
-                    //console.log(response);
-                    //console.log(response.data.response);
+      
                     this.GridNumbers.push(response.data.response);
                 })                
             }

@@ -48,10 +48,10 @@
    <div class="container-list">
       <h1>LISTA EMAIL TRAMITE API</h1>
     <ol class="lista">
-      <li v-for="email in ListaMail"> {{ email }} </li>
+      <li v-for="email in MailList"> {{ email }} </li>
     </ol>
    </div>
-      <button @click="random">click</button>
+      <button @click="gridGenerator">click</button>
             <div class="container">
                 <div v-bind:class="num <= 5 ? 'bg-yellow' : 'bg-green' " class="box" v-for="num in GridNumbers">
                     <h1>{{num}}</h1>
@@ -70,8 +70,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
-
-  <script type="text/javascript" src="assets/js/script.js">
+<script type="text/javascript" src="assets/js/script.js">
 
   </script>
 
